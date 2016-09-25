@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/activity_profile_page"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="teamrocket.firstgen.ProfilePage"
+        android:background="@drawable/background"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="370dp"
+            android:layout_height="252dp"
+            android:src="@drawable/default_pic"
+            android:id="@+id/profile_pic"
+            android:layout_gravity="center_horizontal"
+            android:layout_alignParentTop="true"
+            />
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="First Name: "
+                android:textSize="20dp"
+
+                android:textColor="@android:color/white" />
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="John"
+                android:id="@+id/first_name"
+                android:inputType="text"
+                android:paddingLeft="10dp"
+                android:textColor="@android:color/white"
+
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Last Name: "
+                android:textSize="20dp"
+                android:textColor="@android:color/white"
+                />
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Smith"
+                android:id="@+id/last_name"
+                android:inputType="text"
+                android:paddingLeft="10dp"
+                android:textColor="@android:color/white"
+
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="City: "
+                android:textSize="20dp"
+                android:textColor="@android:color/white"
+                />
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="San Jose"
+                android:id="@+id/city_name"
+                android:inputType="text"
+                android:paddingLeft="10dp"
+                android:textColor="@android:color/white"
+
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Zip Code: "
+                android:textSize="20dp"
+                android:textColor="@android:color/white"
+                />
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="95112"
+                android:id="@+id/zip_code"
+                android:paddingLeft="10dp"
+                android:textColor="@android:color/white"
+                android:inputType="number" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email: "
+                android:textSize="20dp"
+                android:textColor="@android:color/white"
+                />
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="john@smith.com"
+                android:id="@+id/email"
+                android:paddingLeft="10dp"
+                android:textColor="@android:color/white"
+                android:inputType="textEmailAddress" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="GPA: "
+                android:textSize="20dp"
+                android:textColor="@android:color/white"
+                />
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3.8"
+                android:id="@+id/gpa"
+                android:paddingLeft="10dp"
+                android:textColor="@android:color/white"
+                android:inputType="number" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Intended Major: "
+                android:textSize="20dp"
+                android:textColor="@android:color/white"
+                />
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Biology"
+                android:id="@+id/major"
+                android:paddingLeft="10dp"
+                android:textColor="@android:color/white"
+                android:inputType="text" />
+        </LinearLayout>
+    </LinearLayout>
+
+        <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:id="@+id/profile_cancel"
+            android:background="@drawable/my_button_bg"
+            android:textColor="@android:color/white"
+            android:onClick="onClickCancel()" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Save"
+                android:id="@+id/profile_save"
+                android:background="@drawable/my_button_bg"
+                android:textColor="@android:color/white"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="50dp"
+                android:onClick="onClickSave()"></Button>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
