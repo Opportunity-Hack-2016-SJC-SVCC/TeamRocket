@@ -20,6 +20,43 @@
         android:layout_gravity="start"
         android:fitsSystemWindows="true"
         app:headerLayout="@layout/nav_header_main_page"
-        app:menu="@menu/activity_main_page_drawer" />
+        app:menu="@menu/activity_main_page_drawer"
+        android:background="@color/colorPrimary"
+        app:itemTextColor="@android:color/white"
+        app:itemTextAppearance="?android:attr/textAppearanceMedium"
+        android:layout_marginTop="25dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:clickable="true"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="We want to be not just a brand tag on your clothes"
+                android:textColor="#93E5AB"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="30dp"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#93E5AB"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:id="@+id/footer_item"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:text="SIGN OUT"
+                android:layout_marginBottom="10dp"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+    </android.support.design.widget.NavigationView>
 
 </android.support.v4.widget.DrawerLayout>

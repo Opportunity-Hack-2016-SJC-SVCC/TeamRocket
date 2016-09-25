@@ -3,34 +3,25 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_camera"
-            android:icon="@drawable/ic_menu_camera"
-            android:title="Import" />
-        <item
-            android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="Gallery" />
-        <item
-            android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="Slideshow" />
-        <item
-            android:id="@+id/nav_manage"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="Tools" />
-    </group>
+            android:id="@+id/nav_profile"
+            android:icon="@mipmap/profiles"
+            android:title="PROFILE" />
 
-    <item android:title="Communicate">
-        <menu>
-            <item
-                android:id="@+id/nav_share"
-                android:icon="@drawable/ic_menu_share"
-                android:title="Share" />
-            <item
-                android:id="@+id/nav_send"
-                android:icon="@drawable/ic_menu_send"
-                android:title="Send" />
-        </menu>
-    </item>
+        <item
+            android:id="@+id/nav_scholarships"
+            android:icon="@mipmap/scholarships"
+            android:title="SCHOLARSHIPS" />
+
+        <item
+            android:id="@+id/nav_stories"
+            android:icon="@mipmap/stories"
+            android:title="STORIES"/>
+
+        <item
+            android:id="@+id/nav_feedback"
+            android:icon="@mipmap/feedback"
+            android:title="FEEDBACK"/>
+
+    </group>
 
 </menu>

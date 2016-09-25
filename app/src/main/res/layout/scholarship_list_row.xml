@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardCornerRadius="4dp"
+    android:layout_margin="5dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        >
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/sponsor_image"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/profile_image"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/title"
+            android:textSize="16sp"
+            android:text="ABC COMPANY "
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:layout_alignParentTop="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/scholarship_description"
+            android:layout_toRightOf="@+id/sponsor_image"
+            android:layout_below="@+id/title"
+            android:gravity="center"
+            android:text="Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ..."
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/due_date_title"
+            android:layout_toRightOf="@+id/sponsor_image"
+            android:layout_below="@+id/scholarship_description"
+            android:text="Due Date:"
+            android:layout_marginLeft="20dp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/due_date"
+            android:layout_toRightOf="@+id/due_date_title"
+            android:layout_below="@+id/scholarship_description"
+            android:text="10/21/2016 , Friday "
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/scholarship_title"
+            android:text="Scholarship:"
+            android:textStyle="bold"
+            android:layout_above="@+id/scholarship_amount"
+            android:layout_alignStart="@+id/sponsor_image" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/scholarship_amount"
+            android:text="$1,500.00 "
+            android:layout_alignTop="@+id/due_date_title"
+            android:layout_alignStart="@+id/sponsor_image" />
+
+    </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>

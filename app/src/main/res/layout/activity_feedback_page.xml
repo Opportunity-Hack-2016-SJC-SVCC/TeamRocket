@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_height="match_parent"
+                    android:layout_width="wrap_content"
+                    android:text="johnsmith@johnsmith.com"
+                    android:layout_alignParentLeft="true"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center"
+                    android:textStyle="bold"/>
+                <ImageView
+                    android:id="@+id/send"
+                    android:layout_height="match_parent"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:src="@mipmap/send"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center"/>
+
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/feedback_text"
+        android:text=""
+        android:background="@null"
+        android:padding="15dp"
+        android:layout_marginTop="60dp"/>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="15dp">
+
+    <!--    <ImageView
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:src="@drawable/introicon_black"
+            android:layout_alignParentBottom="true"
+            />-->
+
+    </ScrollView>
+</RelativeLayout>

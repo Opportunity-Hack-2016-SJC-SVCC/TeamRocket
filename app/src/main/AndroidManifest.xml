@@ -4,25 +4,39 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/introicon_black"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
             android:name=".MainPage"
-            android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar"/>
-        <activity android:name=".IntroPage">
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+
+        <activity android:name=".IntroPage" android:theme="@style/AppTheme.NoActionBar">>
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity android:name=".LoginPage" />
         <activity android:name=".ProfilePage" />
         <activity android:name=".ScholarshipPage" />
-        <activity android:name=".StoriesPage"></activity>
+        <activity
+            android:name=".StoriesPage"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".FeedbackPage"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AboutPage"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ScholarshipListPage"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".StoryListPage" android:theme="@style/AppTheme.NoActionBar"/>
     </application>
 
 </manifest>
