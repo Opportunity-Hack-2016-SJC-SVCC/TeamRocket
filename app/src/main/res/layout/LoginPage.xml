@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+      xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:tools="http://schemas.android.com/tools"
+      android:orientation="vertical"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:gravity="center"
+      android:layout_marginTop="100dp"
+      android:layout_centerHorizontal="true"
+      android:layout_centerVertical="true"
+      android:background="@drawable/background1"
+      tools:context="teamrocket.firstgen.LoginPage">
+
+    <EditText
+          android:paddingBottom="32dp"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:id="@+id/googleET"
+          android:text="Login with Google" />
+
+    <EditText
+          android:paddingTop="32dp"
+          android:paddingBottom="32dp"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+
+          android:text="Login with Facebook" />
+
+    <EditText
+          android:paddingTop="32dp"
+          android:paddingBottom="32dp"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+
+          android:id="@+id/emailET"
+          android:hint="Enter email address"/>
+
+    <EditText
+          android:paddingTop="32dp"
+          android:paddingBottom="32dp"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+
+          android:id="@+id/PasswordET"
+          android:hint="Enter password"/>
+
+    <EditText
+          android:paddingTop="32dp"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:id="@+id/confirmation"
+          android:visibility="visible"
+          android:hint="Confirm password"
+          />
+
+</LinearLayout>
