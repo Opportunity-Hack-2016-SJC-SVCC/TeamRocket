@@ -16,11 +16,15 @@ public class IntroPage extends AppCompatActivity {
         setContentView(R.layout.activity_intro_page);
     }
     public void onClickSignup(View view){
+        Intent intent = new Intent(this,LoginPage.class);
+        intent.putExtra("value","");
+        startActivity(intent);
 
-        Toast.makeText(this, "Signup clicked", Toast.LENGTH_LONG).show();
+        //Toast.makeText(this, "Signup clicked", Toast.LENGTH_LONG).show();
     }
     public void onClickLogin(View view){
-        Intent intent = new Intent(this,MainPage.class);
+        Intent intent = new Intent(this,LoginPage.class);
+        intent.putExtra("value", "login");
         startActivity(intent);
         //Toast.makeText(this, "Login clicked", Toast.LENGTH_LONG).show();
 

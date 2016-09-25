@@ -8,6 +8,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="teamrocket.firstgen.StoriesPage">
+    tools:context="teamrocket.firstgen.StoriesPage"
+    android:background="@drawable/background">
 
 </RelativeLayout>
